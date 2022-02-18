@@ -6,7 +6,7 @@
 /*   By: oguirra- <oguirra-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 14:23:56 by oguirra-          #+#    #+#             */
-/*   Updated: 2022/02/17 19:28:16 by oguirra-         ###   ########.fr       */
+/*   Updated: 2022/02/18 02:38:51 by oguirra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_atoi(char *str)
 	index = 0;
 	result = 0;
 	signal = 1;
-	while (str[index] == ' ')
+	while (str[index] >= '\t' && str[index] <= '\r' || str[index] == ' ')
 		index++;
 	while (str[index] == '-' || str[index] == '+')
 	{
